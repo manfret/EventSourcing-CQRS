@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyEventSourcing.Common.Domain\MyEventSourcing.Common.Domain.csproj" />
+    <ProjectReference Include="..\MyEventSourcing.Common.Infrastructure\MyEventSourcing.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\MyEventSourcing.MS.Contract\MyEventSourcing.MS.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="APIHandlers\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="Services\Command\" />
+    <Folder Include="Services\Query\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
